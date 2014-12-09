@@ -30,7 +30,7 @@ EOF2
   ( cd /var/cache/oracle-jdk8-installer && find -mindepth 1 -maxdepth 1 -not -name "jdk*" -exec rm -rf {} \; )
   apt-get install -y --force-yes oracle-java8-installer
 
-  # Install GVM & Grails
+  # Install GVM
   mv /home/vagrant/.gvm{,.old}
   su -l -c "curl -s get.gvmtool.net | bash" vagrant
   rmdir /home/vagrant/.gvm/archives
